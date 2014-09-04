@@ -26,7 +26,7 @@ $this->breadcrumbs=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->emailField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
 
@@ -34,9 +34,6 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
 	</div>
 
 	<div class="row rememberMe">

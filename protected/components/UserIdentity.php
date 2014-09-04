@@ -7,6 +7,9 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	private $id;
+	private $nome;
+
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -19,15 +22,48 @@ class UserIdentity extends CUserIdentity
 	{
 		$users=array(
 			// username => password
-			'demo'=>'demo',
 			'admin'=>'admin',
 		);
-		if(!isset($users[$this->username]))
+
+
+		//LOCAL LOGIN
+		if($this->username === 'admin'){
+
+			if($users[$this->username]!==$this->password)
+				$this->errorCode=self::ERROR_PASSWORD_INVALID;
+			else
+				$this->errorCode=self::ERROR_NONE;
+
+			$this->setState('roles', 'admin');
+
+
+			return !$this->errorCode;
+		}
+		
+
+		//BD LOGIN
+		$record=Usuario::model()->findByAttributes(array('email'=>$this->username));
+
+		if( $record == null )
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		else if($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
-		return !$this->errorCode;
+		else if( $record->senha!==md5($this->password) )
+            $this->errorCode=self::ERROR_PASSWORD_INVALID;
+        else
+        {
+            $this->id=$record->cod_usuario;
+            $this->setState('roles', $record->roles);   
+            $this->nome = implode(' ', array($record->nome, $record->sobrenome));
+            $this->errorCode=self::ERROR_NONE;
+        }
+        return !$this->errorCode;
+
+	}
+
+	 public function getId(){
+        return $this->id;
+    }
+
+    public function getName(){
+		return ($this->nome == null) ? $this->username : $this->nome;
 	}
 }

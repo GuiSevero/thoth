@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set('America/Sao_Paulo');
 //Teste
 
 // change the following paths if necessary
