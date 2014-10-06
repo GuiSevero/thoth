@@ -26,16 +26,6 @@ if ($texto) {
 
     $ret = exec('java -jar -Dfile.encoding=UTF-8 sobek.jar  ' . 'tmp/' . $arqIn, $result, $res);
 
-    $out = Array();
-
-
-    for($i=0; $i < 10; $i++){
-    	if (count($result) > $i) 
-    		$out[] = $result[$i];
-    	else
-    		break;
-    }
-
     echo json_encode($result);
 
     unlink('tmp/'.$arqIn);
