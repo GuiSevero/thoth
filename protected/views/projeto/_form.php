@@ -15,26 +15,15 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'descricao'); ?>
-		<?php echo $form->textArea($model,'descricao',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'descricao',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'descricao'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'cod_tag'); ?>
-		<?php echo $form->textField($model,'cod_tag'); ?>
-		<?php echo $form->error($model,'cod_tag'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'cod_usuario'); ?>
-		<?php echo $form->textField($model,'cod_usuario'); ?>
-		<?php echo $form->error($model,'cod_usuario'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Adicionar' : 'Salvar', array('class'=>'btn btn-default')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

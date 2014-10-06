@@ -12,8 +12,8 @@
  * @property string $texto
  *
  * The followings are the available model relations:
- * @property Projeto $codProjeto
- * @property Usuario $codUsuario
+ * @property Projeto $projeto
+ * @property Usuario $usuario
  */
 class Contribuicao extends CActiveRecord
 {
@@ -59,8 +59,8 @@ class Contribuicao extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'codProjeto' => array(self::BELONGS_TO, 'Projeto', 'cod_projeto'),
-			'codUsuario' => array(self::BELONGS_TO, 'Usuario', 'cod_usuario'),
+			'projeto' => array(self::BELONGS_TO, 'Projeto', 'cod_projeto'),
+			'usuario' => array(self::BELONGS_TO, 'Usuario', 'cod_usuario'),
 		);
 	}
 

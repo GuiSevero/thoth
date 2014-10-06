@@ -32,7 +32,7 @@ class TagController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'tokens'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -167,5 +167,23 @@ class TagController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+
+	public function actionTokens($q)
+	{
+
+
+		$command =  Yii::app()->db->createCommand();
+ 
+		$command->from('tag');
+		$command->where = "nome ILIKE '%{$q}%'";
+		$command->select = 'cod_tag as id, nome as name';
+		$command->order = 'nome ASC';
+		$command->limit(25);
+		 
+		//Return array
+		echo json_encode($command->queryAll());
+		Yii::app()->end();
+
 	}
 }

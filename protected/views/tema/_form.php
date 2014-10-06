@@ -28,20 +28,16 @@
 		<?php echo $form->textArea($model,'texto_disparador',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'texto_disparador'); ?>
 	</div>
-
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'tags'); ?>
-		<div id="tags-list">
-			<span id="tags-loader"></span>
-			
-		</div>
+		<?php echo $form->textField($model,'tags', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'tags'); ?>
 	</div>
-	
+
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'imagem'); ?>
-		<?php echo $form->fileField($model,'imagem', array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'imagem', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'imagem'); ?>
 	</div>
 

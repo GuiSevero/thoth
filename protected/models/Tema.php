@@ -104,4 +104,13 @@ class Tema extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+
+	protected function afterSave()
+	{	
+
+
+
+		parent::afterSave();
+	}
 }

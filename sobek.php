@@ -26,7 +26,15 @@ if ($texto) {
 
     $ret = exec('java -jar -Dfile.encoding=UTF-8 sobek.jar  ' . 'tmp/' . $arqIn, $result, $res);
 
-    echo json_encode($result);
+    $tags = array_map(function($item){
+        return array(
+            'id'=>$item,
+            'name'=>$item,
+        );
+
+    }, $result);
+
+    echo json_encode($tags);
 
     unlink('tmp/'.$arqIn);
     

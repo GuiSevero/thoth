@@ -8,6 +8,8 @@
     <!-- Bootstrap -->
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" rel="stylesheet">    
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/site.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/token-input.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/token-input-facebook.css" rel="stylesheet">
     
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,7 +46,7 @@
 				array('label'=>'Usuários', 'url'=>array('/usuario/index')),
 				array('label'=>'Tags', 'url'=>array('/tag/index')),
 				array('label'=>'Projetos', 'url'=>array('/projeto/index')),
-				array('label'=>'Contribuições', 'url'=>array('/projeto/index')),
+				array('label'=>'Contribuições', 'url'=>array('/contribuicao/index')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name .')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
@@ -71,7 +73,7 @@
 </div><!-- FIM DO MENU PRINCIPAL -->
 
 <div id="header">
-	<h1>Hello, world!</h1>
+	<h1>Toth</h1>
 </div>
 
     <?php if(isset($this->breadcrumbs)):?>
@@ -89,8 +91,10 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+    <script>var baseUrl = "<?php echo Yii::app()->request->baseUrl; ?>"; console.log(baseUrl);</script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tinymce/tinymce.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.tokeninput.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tags.js"></script>
   </body>
 </html>

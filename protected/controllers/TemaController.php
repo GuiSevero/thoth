@@ -70,11 +70,27 @@ class TemaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		if(isset($_POST['Tema']['tags']))
+			$model->tags = $_POST['Tema']['tags'];
+			
+
 		if(isset($_POST['Tema']))
 		{
 			$model->attributes=$_POST['Tema'];
-			if($model->save())
+			if($model->save()){
+
+				$tags = explode(',', $model->tags);
+
+				foreach ($tags as $t) {
+					$tag = new Tag();
+					$tag->cod_tema = $model->cod_tema;
+					$tag->nome = $t;
+					$tag->save();
+				}
+
 				$this->redirect(array('view','id'=>$model->cod_tema));
+			}
+				
 		}
 
 		$this->render('create',array(
@@ -94,11 +110,37 @@ class TemaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$model->tags = json_encode(array_map(function($t){
+			return array(
+				'id'=>$t->cod_tag,
+				'name'=>$t->nome,
+				'readonly'=>(count($t->projetos) > 0),
+				'remove'=>true,
+			);
+		}, $model->tags));
+
+
+		if(isset($_POST['Tema']['tags']))
+			$model->tags = $_POST['Tema']['tags'];
+			
+
+
 		if(isset($_POST['Tema']))
 		{
 			$model->attributes=$_POST['Tema'];
-			if($model->save())
+			if($model->save()){
+				Tag::model()->deleteAll('cod_tema = '.$model->cod_tema);
+				$tags = explode(',', $model->tags);
+
+				foreach ($tags as $t) {
+					$tag = new Tag();
+					$tag->cod_tema = $model->cod_tema;
+					$tag->nome = $t;
+					$tag->save();
+				}
+
 				$this->redirect(array('view','id'=>$model->cod_tema));
+			}
 		}
 
 		$this->render('update',array(

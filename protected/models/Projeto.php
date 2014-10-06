@@ -10,9 +10,9 @@
  * @property integer $cod_usuario
  *
  * The followings are the available model relations:
- * @property Tag $codTag
- * @property Usuario $codUsuario
- * @property Contribuicao[] $contribuicaos
+ * @property Tag $tag
+ * @property Usuario $usuario
+ * @property Contribuicao[] $contribuicoes
  */
 class Projeto extends CActiveRecord
 {
@@ -58,9 +58,9 @@ class Projeto extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'codTag' => array(self::BELONGS_TO, 'Tag', 'cod_tag'),
-			'codUsuario' => array(self::BELONGS_TO, 'Usuario', 'cod_usuario'),
-			'contribuicaos' => array(self::HAS_MANY, 'Contribuicao', 'cod_projeto'),
+			'tag' => array(self::BELONGS_TO, 'Tag', 'cod_tag'),
+			'usuario' => array(self::BELONGS_TO, 'Usuario', 'cod_usuario'),
+			'contribuicoes' => array(self::HAS_MANY, 'Contribuicao', 'cod_projeto'),
 		);
 	}
 

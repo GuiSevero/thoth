@@ -60,9 +60,13 @@ class ContribuicaoController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($id)
 	{
 		$model=new Contribuicao;
+		$model->cod_projeto = $id; 
+		$model->cod_usuario = Yii::app()->user->getId();
+		$model->local = "0";
+		$model->data_criacao = date('Y-m-d');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,8 +74,11 @@ class ContribuicaoController extends Controller
 		if(isset($_POST['Contribuicao']))
 		{
 			$model->attributes=$_POST['Contribuicao'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->cod_contribuicao));
+			if($model->save()){
+
+				$this->renderPartial('/projeto/_contribuicao', array('cont'=>$model));
+				Yii::app()->end();
+			}
 		}
 
 		$this->render('create',array(

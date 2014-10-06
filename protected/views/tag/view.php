@@ -16,13 +16,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Tag #<?php echo $model->cod_tag; ?></h1>
+<h3><?php echo $model->nome; ?></h2>
+<h4><?php echo $model->tema->assunto; ?></h4>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'cod_tag',
-		'cod_tema',
-		'nome',
-	),
-)); ?>
+
+<div class="text">
+<p>
+	<?php echo $model->tema->texto_disparador; ?>
+</p>
+</div>
+

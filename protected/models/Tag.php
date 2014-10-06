@@ -9,7 +9,7 @@
  * @property string $nome
  *
  * The followings are the available model relations:
- * @property Tema $codTema
+ * @property Tema $tema
  * @property Projeto[] $projetos
  */
 class Tag extends CActiveRecord
@@ -56,7 +56,7 @@ class Tag extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'codTema' => array(self::BELONGS_TO, 'Tema', 'cod_tema'),
+			'tema' => array(self::BELONGS_TO, 'Tema', 'cod_tema'),
 			'projetos' => array(self::HAS_MANY, 'Projeto', 'cod_tag'),
 		);
 	}
