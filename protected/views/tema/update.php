@@ -4,8 +4,8 @@
 
 $this->breadcrumbs=array(
 	'Temas'=>array('index'),
-	$model->cod_tema=>array('view','id'=>$model->cod_tema),
-	'Update',
+	$model->assunto=>array('view','id'=>$model->cod_tema),
+	'Editar',
 );
 
 $this->menu=array(
@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Tema <?php echo $model->cod_tema; ?></h1>
+<h3><?php echo $model->assunto; ?></h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
