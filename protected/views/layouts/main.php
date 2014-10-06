@@ -6,7 +6,9 @@
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css" rel="stylesheet">    
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/site.css" rel="stylesheet">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +29,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <?php echo CHtml::link('Thoth', array('/site/index'), array('class'=>'navbar-brand')); ?>
+    <?php echo CHtml::link('Toth', array('/site/index'), array('class'=>'navbar-brand')); ?>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
   	<?php $this->widget('zii.widgets.CMenu',array(
@@ -79,7 +81,7 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
-	<div class="container-fluid">
+	<div class="container">
 		<?php echo $content; ?>
 	</div>
 
@@ -89,5 +91,6 @@
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tinymce/tinymce.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/tags.js"></script>
   </body>
 </html>
