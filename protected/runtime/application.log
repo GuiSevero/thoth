@@ -1,0 +1,1396 @@
+2014/05/21 20:21:29 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (C:\Apache\apache\www\thoth\protected\views\layouts\main.php:51)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 C:\Apache\apache\www\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(785): SiteController->renderFile()
+#10 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#14 C:\Apache\apache\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#16 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Apache\apache\www\thoth\index.php(15): CWebApplication->run()
+REQUEST_URI=/thoth/
+in C:\Apache\apache\www\thoth\protected\views\layouts\main.php (51)
+in C:\Apache\apache\www\thoth\protected\views\layouts\column1.php (6)
+in C:\Apache\apache\www\thoth\protected\controllers\SiteController.php (32)
+2014/06/09 03:33:09 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (C:\Apache\apache\www\thoth\protected\views\layouts\main.php:51)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#2 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 C:\Apache\apache\www\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#6 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(785): SiteController->renderFile()
+#10 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): SiteController->render()
+#11 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#14 C:\Apache\apache\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#16 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\Apache\apache\www\thoth\index.php(15): CWebApplication->run()
+REQUEST_URI=/thoth/
+in C:\Apache\apache\www\thoth\protected\views\layouts\main.php (51)
+in C:\Apache\apache\www\thoth\protected\views\layouts\column1.php (6)
+in C:\Apache\apache\www\thoth\protected\controllers\SiteController.php (32)
+2014/06/09 00:35:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in C:\Apache\apache\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\Apache\apache\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\Apache\apache\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\Apache\apache\www\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 C:\Apache\apache\www\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 C:\Apache\apache\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\Apache\apache\www\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
+#7 C:\Apache\apache\www\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/gii/model
+HTTP_REFERER=http://localhost/thoth/index.php/gii/default/index
+---
+2014/06/09 00:35:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[08006] [7] FATAL:  autentica��o do tipo password falhou para usu�rio "root"' in C:\Apache\apache\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\Apache\apache\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\Apache\apache\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\Apache\apache\www\yii\framework\base\CModule.php(104): CModule->getComponent('db')
+#4 C:\Apache\apache\www\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
+#5 C:\Apache\apache\www\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\Apache\apache\www\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
+#7 C:\Apache\apache\www\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/gii/model
+HTTP_REFERER=http://localhost/thoth/index.php/gii/default/index
+---
+2014/06/09 14:22:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "tema" viola restrição de chave estrangeira "tema_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(1) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "tema" ("cod_area", "assunto", "texto_disparador", "imagem", "cod_usuario") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/06/09 14:22:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "tema" viola restrição de chave estrangeira "tema_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(1) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "tema" ("cod_area", "assunto", "texto_disparador", "imagem", "cod_usuario") VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): TemaController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tema/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/tema/create
+HTTP_REFERER=http://localhost/thoth/index.php/tema/create
+---
+2014/06/09 14:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tags".' in C:\Apache\apache\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tags')
+#1 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/thoth/index.php/tags
+HTTP_REFERER=http://localhost/thoth/index.php/tema/2
+---
+2014/06/09 14:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tags".' in C:\Apache\apache\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tags')
+#1 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/thoth/index.php/tags
+HTTP_REFERER=http://localhost/thoth/index.php/tags
+---
+2014/06/09 14:23:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "tag" viola restrição de chave estrangeira "tag_cod_tema_fkey"
+DETAIL:  Chave (cod_tema)=(1) não está presente na tabela "tema".. The SQL statement executed was: INSERT INTO "tag" ("cod_tema", "nome") VALUES (:yp0, :yp1).
+in C:\Apache\apache\www\thoth\protected\controllers\TagController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/06/09 14:23:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "tag" viola restrição de chave estrangeira "tag_cod_tema_fkey"
+DETAIL:  Chave (cod_tema)=(1) não está presente na tabela "tema".. The SQL statement executed was: INSERT INTO "tag" ("cod_tema", "nome") VALUES (:yp0, :yp1)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\TagController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(50): TagController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('tag/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/tag/create
+HTTP_REFERER=http://localhost/thoth/index.php/tag/create
+---
+2014/07/28 23:20:57 [error] [exception.CException] exception 'CException' with message 'Property "Tema.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\area\view.php(22): CActiveRecord->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\Apache\apache\www\thoth\protected\controllers\AreaController.php(56): CController->render('view', Array)
+#7 [internal function]: AreaController->actionView('1')
+#8 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(AreaController), Array)
+#9 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(AreaController), Object(ReflectionMethod), Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('area/view')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php/area/1
+HTTP_REFERER=http://localhost/thoth/index.php/area/index
+---
+2014/07/28 23:23:49 [error] [exception.CException] exception 'CException' with message 'Property "Tema.projetos" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('projetos')
+#1 C:\Apache\apache\www\thoth\protected\views\area\view.php(29): CActiveRecord->__get('projetos')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\Apache\apache\www\thoth\protected\controllers\AreaController.php(56): CController->render('view', Array)
+#7 [internal function]: AreaController->actionView('1')
+#8 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(AreaController), Array)
+#9 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(AreaController), Object(ReflectionMethod), Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('area/view')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php/area/1
+HTTP_REFERER=http://localhost/thoth/index.php/area/index
+---
+2014/07/28 23:37:01 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "tagss" is not defined in active record class "Tema".' in C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php(265): CActiveFinder->buildJoinTree(Object(CJoinElement), 'tagss', Array)
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), 'projetos')
+#2 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(272): CActiveFinder->__construct(Object(Tema), 'projetos')
+#3 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(142): CActiveRecord->getRelated('projetos')
+#4 C:\Apache\apache\www\thoth\protected\views\area\view.php(30): CActiveRecord->__get('projetos')
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require('C:\Apache\apach...')
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Apache\apache\www\thoth\protected\controllers\AreaController.php(56): CController->render('view', Array)
+#10 [internal function]: AreaController->actionView('1')
+#11 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(AreaController), Array)
+#12 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(AreaController), Object(ReflectionMethod), Array)
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#22 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('area/view')
+#23 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#25 {main}
+REQUEST_URI=/thoth/index.php/area/1
+HTTP_REFERER=http://localhost/thoth/index.php/area/index
+---
+2014/07/28 23:37:17 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "tags" is not defined in active record class "Projeto".' in C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php(271): CActiveFinder->buildJoinTree(Object(CJoinElement), 'tags')
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), 'projetos')
+#2 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(272): CActiveFinder->__construct(Object(Tema), 'projetos')
+#3 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(142): CActiveRecord->getRelated('projetos')
+#4 C:\Apache\apache\www\thoth\protected\views\area\view.php(30): CActiveRecord->__get('projetos')
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(127): require('C:\Apache\apach...')
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\Apache\apache\www\thoth\protected\controllers\AreaController.php(56): CController->render('view', Array)
+#10 [internal function]: AreaController->actionView('1')
+#11 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(AreaController), Array)
+#12 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(AreaController), Object(ReflectionMethod), Array)
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\Apache\apache\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#22 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('area/view')
+#23 C:\Apache\apache\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#25 {main}
+REQUEST_URI=/thoth/index.php/area/1
+HTTP_REFERER=http://localhost/thoth/index.php/area/index
+---
+2014/08/10 23:11:15 [error] [php] include(User.php): failed to open stream: No such file or directory (C:\Apache\apache\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\Apache\apache\www\thoth\protected\components\UserIdentity.php(43): spl_autoload_call()
+#1 C:\Apache\apache\www\thoth\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\Apache\apache\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\Apache\apache\www\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 C:\Apache\apache\www\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(94): LoginForm->validate()
+#6 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/site/login
+in C:\Apache\apache\www\thoth\protected\components\UserIdentity.php (43)
+in C:\Apache\apache\www\thoth\protected\models\LoginForm.php (52)
+in C:\Apache\apache\www\thoth\protected\controllers\SiteController.php (94)
+2014/08/10 23:11:38 [error] [exception.CException] exception 'CException' with message 'Property "Usuario.password" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password')
+#1 C:\Apache\apache\www\thoth\protected\components\UserIdentity.php(47): CActiveRecord->__get('password')
+#2 C:\Apache\apache\www\thoth\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\Apache\apache\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\Apache\apache\www\yii\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\Apache\apache\www\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(94): CModel->validate()
+#7 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/thoth/index.php/site/login
+HTTP_REFERER=http://localhost/thoth/index.php/site/login
+---
+2014/08/10 23:16:02 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.roles" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('roles')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('roles')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php/site/login
+---
+2014/08/10 23:17:18 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:17:39 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:18:56 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:18:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:24:17 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.nome" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nome')
+#1 C:\Apache\apache\www\thoth\protected\views\layouts\main.php(47): CWebUser->__get('nome')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\Apache\apache\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\Apache\apache\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\Apache\apache\www\thoth\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#11 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#13 C:\Apache\apache\www\thoth\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:30:35 [error] [php] Invalid argument supplied for foreach() (C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:342)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter()
+#1 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#2 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): AreaController->filterAccessControl()
+#3 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(265): AreaController->runActionWithFilters()
+#6 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): AreaController->run()
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/area/index
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/08/10 23:30:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('area/index')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/area/index
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/08/10 23:33:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('area/index')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/area/index
+HTTP_REFERER=http://localhost/thoth/index.php
+---
+2014/10/05 21:29:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('area/create')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/area/create
+HTTP_REFERER=http://localhost/thoth/index.php/site/login
+---
+2014/10/05 22:49:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('area/update')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/area/update/1
+HTTP_REFERER=http://localhost/thoth/index.php/area/1
+---
+2014/10/06 00:14:27 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(34): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\update.php(21): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(106): TemaController->render()
+#14 unknown(0): TemaController->actionUpdate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/update/2
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (34)
+in C:\Apache\apache\www\thoth\protected\views\tema\update.php (21)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (106)
+2014/10/06 00:15:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/create')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/tema/create
+---
+2014/10/06 00:15:58 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(34): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\update.php(21): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(106): TemaController->render()
+#14 unknown(0): TemaController->actionUpdate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/update/2
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (34)
+in C:\Apache\apache\www\thoth\protected\views\tema\update.php (21)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (106)
+2014/10/06 00:18:44 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(34): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\update.php(21): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(106): TemaController->render()
+#14 unknown(0): TemaController->actionUpdate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/update/2
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (34)
+in C:\Apache\apache\www\thoth\protected\views\tema\update.php (21)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (106)
+2014/10/06 00:18:48 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/create')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/tema/create
+---
+2014/10/06 00:18:56 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(34): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\update.php(21): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(106): TemaController->render()
+#14 unknown(0): TemaController->actionUpdate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/update/2
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (34)
+in C:\Apache\apache\www\thoth\protected\views\tema\update.php (21)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (106)
+2014/10/06 00:49:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('tokens')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tag/tokens')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/tag/tokens
+---
+2014/10/06 01:14:13 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (75)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:19:59 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (75)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:20:15 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (75)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:23:11 [error] [exception.CException] exception 'CException' with message 'Property "Tema.pessoas" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('pessoas', 'ainda,aumento,c...')
+#1 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(74): CActiveRecord->__set('pessoas', 'ainda,aumento,c...')
+#2 [internal function]: TemaController->actionCreate('1')
+#3 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TemaController), Array)
+#4 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TemaController), Object(ReflectionMethod), Array)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#14 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/create')
+#15 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/thoth/index.php/tema/create/1
+HTTP_REFERER=http://localhost/thoth/index.php/tema/create/1
+---
+2014/10/06 01:23:26 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (79)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:27:32 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (79)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:28:18 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (79)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:30:45 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (79)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:30:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('tokens')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tag/tokens')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/tag/tokens
+---
+2014/10/06 01:33:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/delete')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/tema/delete/4
+HTTP_REFERER=http://localhost/thoth/index.php/tema/4
+---
+2014/10/06 01:33:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#11 {main}
+REQUEST_URI=/thoth/index.php/usuario/admin
+HTTP_REFERER=http://localhost/thoth/index.php/usuario/index
+---
+2014/10/06 01:49:19 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(33): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\update.php(21): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(122): TemaController->render()
+#14 unknown(0): TemaController->actionUpdate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/update/7
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (33)
+in C:\Apache\apache\www\thoth\protected\views\tema\update.php (21)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (122)
+2014/10/06 01:57:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_tag_fkey"
+DETAIL:  Chave (cod_tag)=(1) não está presente na tabela "tag".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2).
+in C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:57:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_tag_fkey"
+DETAIL:  Chave (cod_tag)=(1) não está presente na tabela "tag".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/projeto/create
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/create
+---
+2014/10/06 01:57:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_tag_fkey"
+DETAIL:  Chave (cod_tag)=(1) não está presente na tabela "tag".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2).
+in C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:57:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_tag_fkey"
+DETAIL:  Chave (cod_tag)=(1) não está presente na tabela "tag".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/projeto/create
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/create
+---
+2014/10/06 01:57:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(3) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2).
+in C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:57:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(3) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/projeto/create
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/create
+---
+2014/10/06 01:57:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(3) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2).
+in C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php (73)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 01:57:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  inserção ou atualização em tabela "projeto" viola restrição de chave estrangeira "projeto_cod_usuario_fkey"
+DETAIL:  Chave (cod_usuario)=(3) não está presente na tabela "usuario".. The SQL statement executed was: INSERT INTO "projeto" ("descricao", "cod_tag", "cod_usuario") VALUES (:yp0, :yp1, :yp2)' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(73): CActiveRecord->save()
+#3 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionCreate()
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#14 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/thoth/index.php/projeto/create
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/create
+---
+2014/10/06 01:58:23 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (123)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:13:41 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:13:41 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  atualização ou exclusão em tabela "tag" viola restrição de chave estrangeira "projeto_cod_tag_fkey" em "projeto"
+DETAIL:  Chave (cod_tag)=(3) ainda é referenciada pela tabela "projeto".. The SQL statement executed was: DELETE FROM "tag" WHERE cod_tema = 7.
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (132)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:13:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23503]: Foreign key violation: 7 ERRO:  atualização ou exclusão em tabela "tag" viola restrição de chave estrangeira "projeto_cod_tag_fkey" em "projeto"
+DETAIL:  Chave (cod_tag)=(3) ainda é referenciada pela tabela "projeto".. The SQL statement executed was: DELETE FROM "tag" WHERE cod_tema = 7' in C:\Apache\apache\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(1818): CDbCommand->execute()
+#1 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(132): CActiveRecord->deleteAll('cod_tema = 7')
+#2 [internal function]: TemaController->actionUpdate('7')
+#3 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TemaController), Array)
+#4 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TemaController), Object(ReflectionMethod), Array)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/update')
+#15 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/thoth/index.php/tema/update/7
+HTTP_REFERER=http://localhost/thoth/index.php/tema/update/7
+---
+2014/10/06 02:14:46 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:18:31 [error] [exception.CException] exception 'CException' with message 'Property "Tag.tema" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('tema')
+#1 C:\Apache\apache\www\thoth\protected\views\tag\view.php(20): CActiveRecord->__get('tema')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\Apache\apache\www\thoth\protected\controllers\TagController.php(56): CController->render('view', Array)
+#7 [internal function]: TagController->actionView('2')
+#8 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TagController), Array)
+#9 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TagController), Object(ReflectionMethod), Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tag/view')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php/tag/2
+HTTP_REFERER=http://localhost/thoth/index.php/tag/index
+---
+2014/10/06 02:18:40 [error] [exception.CException] exception 'CException' with message 'Property "Tag.tema" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('tema')
+#1 C:\Apache\apache\www\thoth\protected\views\tag\view.php(20): CActiveRecord->__get('tema')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\Apache\apache\www\thoth\protected\controllers\TagController.php(56): CController->render('view', Array)
+#7 [internal function]: TagController->actionView('2')
+#8 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(TagController), Array)
+#9 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(TagController), Object(ReflectionMethod), Array)
+#10 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tag/view')
+#20 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#22 {main}
+REQUEST_URI=/thoth/index.php/tag/2
+HTTP_REFERER=http://localhost/thoth/index.php/tag/index
+---
+2014/10/06 02:19:42 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:19:53 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:27:53 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 02:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('teste')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('teste')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/teste')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/teste
+HTTP_REFERER=http://localhost/thoth/index.php/tema/7
+---
+2014/10/06 02:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('teste')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('teste')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/teste')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/teste
+HTTP_REFERER=http://localhost/thoth/index.php/tema/7
+---
+2014/10/06 02:29:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('teste')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('teste')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/teste')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/teste
+HTTP_REFERER=http://localhost/thoth/index.php/tema/7
+---
+2014/10/06 02:43:43 [error] [exception.CException] exception 'CException' with message 'Property "Projeto.tag" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(161): CComponent->__set('tag', Object(Tag))
+#1 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(68): CActiveRecord->__set('tag', Object(Tag))
+#2 [internal function]: ProjetoController->actionCreate('2')
+#3 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjetoController), Array)
+#4 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjetoController), Object(ReflectionMethod), Array)
+#5 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#14 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#15 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#17 {main}
+REQUEST_URI=/thoth/index.php/projeto/create/2
+HTTP_REFERER=http://localhost/thoth/index.php/tema/2
+---
+2014/10/06 02:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('id')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('id')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('area/id')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/area/id/1
+HTTP_REFERER=http://localhost/thoth/index.php/tema/2
+---
+2014/10/06 02:54:50 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 03:09:57 [error] [exception.CException] exception 'CException' with message 'Property "Contribuicao.ususario" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('ususario')
+#1 C:\Apache\apache\www\thoth\protected\views\projeto\_contribuicao.php(2): CActiveRecord->__get('ususario')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\thoth\protected\views\projeto\view.php(25): CController->renderPartial('/projeto/_contr...', Array)
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#10 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(56): CController->render('view', Array)
+#11 [internal function]: ProjetoController->actionView('13')
+#12 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjetoController), Array)
+#13 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjetoController), Object(ReflectionMethod), Array)
+#14 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/view')
+#24 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#26 {main}
+REQUEST_URI=/thoth/index.php/projeto/13
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/index
+---
+2014/10/06 03:10:14 [error] [exception.CException] exception 'CException' with message 'Property "Contribuicao.usuario" is not defined.' in C:\Apache\apache\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('usuario')
+#1 C:\Apache\apache\www\thoth\protected\views\projeto\_contribuicao.php(2): CActiveRecord->__get('usuario')
+#2 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#3 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#4 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#5 C:\Apache\apache\www\thoth\protected\views\projeto\view.php(25): CController->renderPartial('/projeto/_contr...', Array)
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require('C:\Apache\apach...')
+#7 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\Apache\apach...', Array, true)
+#8 C:\Apache\apache\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\Apache\apach...', Array, true)
+#9 C:\Apache\apache\www\yii\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#10 C:\Apache\apache\www\thoth\protected\controllers\ProjetoController.php(56): CController->render('view', Array)
+#11 [internal function]: ProjetoController->actionView('13')
+#12 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjetoController), Array)
+#13 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjetoController), Object(ReflectionMethod), Array)
+#14 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#23 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/view')
+#24 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#26 {main}
+REQUEST_URI=/thoth/index.php/projeto/13
+HTTP_REFERER=http://localhost/thoth/index.php/projeto/index
+---
+2014/10/06 03:12:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contribuicao/cr...')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/contribuicao/create
+HTTP_REFERER=http://localhost/thoth/index.php/contribuicao/index
+---
+2014/10/06 03:14:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\Apache\apache\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('contribuicao/cr...')
+#10 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#12 {main}
+REQUEST_URI=/thoth/index.php/contribuicao/create
+HTTP_REFERER=http://localhost/thoth/index.php/contribuicao/index
+---
+2014/10/06 03:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imagem".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('imagem')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('imagem')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/imagem')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/imagem
+HTTP_REFERER=http://localhost/thoth/index.php/tema/3
+---
+2014/10/06 03:27:34 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (130)
+in C:\Apache\apache\www\thoth\index.php (16)
+2014/10/06 03:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "imagem".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('imagem')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('imagem')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/imagem')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/imagem
+HTTP_REFERER=http://localhost/thoth/index.php/tema/3
+---
+2014/10/06 18:07:15 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(33): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\create.php(18): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(98): TemaController->render()
+#14 unknown(0): TemaController->actionCreate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/create/1
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (33)
+in C:\Apache\apache\www\thoth\protected\views\tema\create.php (18)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (98)
+2014/10/06 18:07:30 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(158): renderAttributes()
+#1 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(2255): tag()
+#2 C:\Apache\apache\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#3 C:\Apache\apache\www\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#4 C:\Apache\apache\www\thoth\protected\views\tema\_form.php(33): CActiveForm->textField()
+#5 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#6 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#7 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#8 C:\Apache\apache\www\thoth\protected\views\tema\create.php(18): TemaController->renderPartial()
+#9 C:\Apache\apache\www\yii\framework\web\CBaseController.php(126): require()
+#10 C:\Apache\apache\www\yii\framework\web\CBaseController.php(95): TemaController->renderInternal()
+#11 C:\Apache\apache\www\yii\framework\web\CController.php(869): TemaController->renderFile()
+#12 C:\Apache\apache\www\yii\framework\web\CController.php(782): TemaController->renderPartial()
+#13 C:\Apache\apache\www\thoth\protected\controllers\TemaController.php(98): TemaController->render()
+#14 unknown(0): TemaController->actionCreate()
+#15 C:\Apache\apache\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#16 C:\Apache\apache\www\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#17 C:\Apache\apache\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(133): TemaController->runAction()
+#19 C:\Apache\apache\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\Apache\apache\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 C:\Apache\apache\www\yii\framework\web\filters\CInlineFilter.php(58): TemaController->filterAccessControl()
+#22 C:\Apache\apache\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 C:\Apache\apache\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\Apache\apache\www\yii\framework\web\CController.php(265): TemaController->runActionWithFilters()
+#25 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): TemaController->run()
+#26 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\Apache\apache\www\thoth\index.php(16): CWebApplication->run()
+REQUEST_URI=/thoth/index.php/tema/create/1
+in C:\Apache\apache\www\thoth\protected\views\tema\_form.php (33)
+in C:\Apache\apache\www\thoth\protected\views\tema\create.php (18)
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (98)
+2014/10/06 18:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('teste')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('teste')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/teste')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/teste
+HTTP_REFERER=http://localhost/thoth/index.php/tema/4
+---
+2014/10/06 18:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "teste".' in C:\Apache\apache\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\Apache\apache\www\yii\framework\web\CController.php(270): CController->missingAction('teste')
+#1 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(282): CController->run('teste')
+#2 C:\Apache\apache\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('tema/teste')
+#3 C:\Apache\apache\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\Apache\apache\www\thoth\index.php(16): CApplication->run()
+#5 {main}
+REQUEST_URI=/thoth/index.php/tema/teste
+HTTP_REFERER=http://localhost/thoth/index.php/tema/4
+---
+2014/10/06 18:21:38 [warning] [application] Failed to set unsafe attribute "tags" of "Tema".
+in C:\Apache\apache\www\thoth\protected\controllers\TemaController.php (131)
+in C:\Apache\apache\www\thoth\index.php (16)
