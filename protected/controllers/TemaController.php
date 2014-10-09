@@ -66,6 +66,7 @@ class TemaController extends Controller
 
 		$model->cod_area = $id;
 		$model->cod_usuario = Yii::app()->user->getId();
+		$model->tags=null;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

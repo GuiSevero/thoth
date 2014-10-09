@@ -5,7 +5,7 @@ $('#Tema_tags').tokenInput(baseUrl + '/index.php/tag/tokens', {
  ,	noResultsText: "Nenhum resultado encontrado"
  ,	searchingText: "Procurando..."
  ,	tokenDelimiter: ","
- ,  prePopulate: JSON.parse($('#Tema_tags').val())
+// ,  prePopulate: JSON.parse($('#Tema_tags').val())
  ,  tokenValue: 'name'
 });
 
